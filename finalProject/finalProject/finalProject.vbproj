@@ -70,6 +70,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="instructions.Designer.vb">
+      <DependentUpon>instructions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="instructions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lairOfDench.Designer.vb">
+      <DependentUpon>lairOfDench.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lairOfDench.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Menu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +106,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="instructions.resx">
+      <DependentUpon>instructions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lairOfDench.resx">
+      <DependentUpon>lairOfDench.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\denchOrc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\denchOrc1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
