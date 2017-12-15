@@ -4,7 +4,13 @@
         Label2.Parent = PictureBox1
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
+        Dim box = New instructions
+        box.Show()
+
     End Sub
 End Class

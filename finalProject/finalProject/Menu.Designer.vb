@@ -24,8 +24,8 @@ Partial Class Menu
     Private Sub InitializeComponent()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnEnter = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -53,33 +53,33 @@ Partial Class Menu
         Me.Label2.Text = "MAIN MENU"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Button1
+        'btnEnter
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.Location = New System.Drawing.Point(359, 187)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 48)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "I'm a Brave Soul, I want to play."
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnEnter.BackColor = System.Drawing.Color.Transparent
+        Me.btnEnter.Location = New System.Drawing.Point(359, 187)
+        Me.btnEnter.Name = "btnEnter"
+        Me.btnEnter.Size = New System.Drawing.Size(75, 48)
+        Me.btnEnter.TabIndex = 3
+        Me.btnEnter.Text = "I'm a Brave Soul, I want to play."
+        Me.btnEnter.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnExit
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.Location = New System.Drawing.Point(440, 187)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 48)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "No I'm too scared, quit."
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnExit.BackColor = System.Drawing.Color.Transparent
+        Me.btnExit.Location = New System.Drawing.Point(440, 187)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 48)
+        Me.btnExit.TabIndex = 4
+        Me.btnExit.Text = "No I'm too scared, quit."
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(885, 454)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnEnter)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Menu"
@@ -90,7 +90,7 @@ Partial Class Menu
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnEnter As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 
 End Class
