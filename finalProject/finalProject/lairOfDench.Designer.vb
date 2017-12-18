@@ -25,13 +25,14 @@ Partial Class lairOfDench
         Me.components = New System.ComponentModel.Container()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnWarCry = New System.Windows.Forms.Button()
+        Me.btnFight = New System.Windows.Forms.Button()
+        Me.btnRunPast = New System.Windows.Forms.Button()
+        Me.btnInsultHim = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.timeLeft = New System.Windows.Forms.Timer(Me.components)
         Me.lblTime = New System.Windows.Forms.Label()
+        Me.btnAcceptYourFate = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,7 +40,7 @@ Partial Class lairOfDench
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Image = Global.finalProject.My.Resources.Resources.denchOrc1
-        Me.PictureBox1.Location = New System.Drawing.Point(33, 64)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(346, 346)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -58,52 +59,52 @@ Partial Class lairOfDench
         Me.Label1.Text = "This is Dench the Orc. He is your first fight." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You see that huge freaking mallet" & _
     " in his hand?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "He killed Thor with that. "
         '
-        'Button1
+        'btnWarCry
         '
-        Me.Button1.Location = New System.Drawing.Point(426, 184)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(91, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "War Cry"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnWarCry.Location = New System.Drawing.Point(717, 260)
+        Me.btnWarCry.Name = "btnWarCry"
+        Me.btnWarCry.Size = New System.Drawing.Size(91, 35)
+        Me.btnWarCry.TabIndex = 2
+        Me.btnWarCry.Text = "War Cry"
+        Me.btnWarCry.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnFight
         '
-        Me.Button2.Location = New System.Drawing.Point(629, 184)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(91, 23)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Fight"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnFight.Location = New System.Drawing.Point(717, 178)
+        Me.btnFight.Name = "btnFight"
+        Me.btnFight.Size = New System.Drawing.Size(91, 35)
+        Me.btnFight.TabIndex = 3
+        Me.btnFight.Text = "Fight"
+        Me.btnFight.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnRunPast
         '
-        Me.Button3.Location = New System.Drawing.Point(426, 244)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(91, 23)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Run past"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnRunPast.Location = New System.Drawing.Point(442, 178)
+        Me.btnRunPast.Name = "btnRunPast"
+        Me.btnRunPast.Size = New System.Drawing.Size(91, 35)
+        Me.btnRunPast.TabIndex = 4
+        Me.btnRunPast.Text = "Run past"
+        Me.btnRunPast.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnInsultHim
         '
-        Me.Button4.Location = New System.Drawing.Point(629, 244)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(91, 35)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Remind him he's ugly"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnInsultHim.Location = New System.Drawing.Point(442, 260)
+        Me.btnInsultHim.Name = "btnInsultHim"
+        Me.btnInsultHim.Size = New System.Drawing.Size(91, 35)
+        Me.btnInsultHim.TabIndex = 5
+        Me.btnInsultHim.Text = "Remind him he's ugly"
+        Me.btnInsultHim.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(422, 318)
+        Me.Label2.Location = New System.Drawing.Point(536, 317)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(315, 24)
+        Me.Label2.Size = New System.Drawing.Size(174, 24)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "What do you do? Choose above."
+        Me.Label2.Text = "What do you do? "
         '
         'timeLeft
         '
@@ -119,18 +120,28 @@ Partial Class lairOfDench
         Me.lblTime.Size = New System.Drawing.Size(162, 23)
         Me.lblTime.TabIndex = 7
         '
+        'btnAcceptYourFate
+        '
+        Me.btnAcceptYourFate.Location = New System.Drawing.Point(579, 217)
+        Me.btnAcceptYourFate.Name = "btnAcceptYourFate"
+        Me.btnAcceptYourFate.Size = New System.Drawing.Size(91, 35)
+        Me.btnAcceptYourFate.TabIndex = 8
+        Me.btnAcceptYourFate.Text = "Accept your fate"
+        Me.btnAcceptYourFate.UseVisualStyleBackColor = True
+        '
         'lairOfDench
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(884, 473)
+        Me.Controls.Add(Me.btnAcceptYourFate)
         Me.Controls.Add(Me.lblTime)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnInsultHim)
+        Me.Controls.Add(Me.btnRunPast)
+        Me.Controls.Add(Me.btnFight)
+        Me.Controls.Add(Me.btnWarCry)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "lairOfDench"
@@ -142,11 +153,12 @@ Partial Class lairOfDench
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents btnWarCry As System.Windows.Forms.Button
+    Friend WithEvents btnFight As System.Windows.Forms.Button
+    Friend WithEvents btnRunPast As System.Windows.Forms.Button
+    Friend WithEvents btnInsultHim As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents timeLeft As System.Windows.Forms.Timer
     Friend WithEvents lblTime As System.Windows.Forms.Label
+    Friend WithEvents btnAcceptYourFate As System.Windows.Forms.Button
 End Class
